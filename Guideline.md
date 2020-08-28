@@ -36,3 +36,16 @@ npm audit
 # just a cmd
 
 git commit -m ":package: "
+
+
+# create a component
+
+npx ng generate component current-weather
+
+# create an interface
+
+npx ng generate interface ICurrentWeather
+
+# Angular Service
+
+npx ng g s weather --flat false
