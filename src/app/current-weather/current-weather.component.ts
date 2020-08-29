@@ -14,14 +14,14 @@ export class CurrentWeatherComponent implements OnInit {
 
   ngOnInit() {
     this.weatherService
-      .getCurrentWeather('El Jadida', 'MA')
+      .getCurrentWeather('Munich', 'DE')
       .subscribe((data) => (this.current = data))
   }
 }
 
 /*
 //template: ` <p>current weather works!</p> `,
-
+// .getCurrentWeather('El Jadida', 'MA')
 
   constructor() {
     this.current = {

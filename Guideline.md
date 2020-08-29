@@ -49,3 +49,10 @@ npx ng generate interface ICurrentWeather
 # Angular Service
 
 npx ng g s weather --flat false
+
+# Testing Angular App
+
+HttpClientTestingModule  // provider??
+
+fake.ts ???
+
