@@ -56,3 +56,27 @@ HttpClientTestingModule  // provider??
 
 fake.ts ???
 
+# Docker
+
+> Add this to package json:
+
+  "config": {
+    "imageRepo": "tennakdi23/myweatherstation",
+    "imageName": "localcast-weather",
+    "imagePort": "8080"
+  },
+
+  > and this
+
+  https://gist.github.com/duluca/d13e501e870215586271b0f9ce1781ce#file-npm-scripts-for-docker-md
+
+> then run
+
+npm run docker:build
+npm run docker:run
+
+npm run docker:publish
+
+# Solutions
+
+npm i -D cross-conf-env npm-run-all
