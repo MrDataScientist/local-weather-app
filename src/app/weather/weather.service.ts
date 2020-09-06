@@ -43,7 +43,7 @@ export class WeatherService implements IWeatherService {
   }
 
   private transformToICurrentWeather(data: ICurrentWeatherData): ICurrentWeather {
-    console.log('data:', data)
+    console.log('data:', data) // TODO: to be deleted
 
     return {
       city: data.name,
