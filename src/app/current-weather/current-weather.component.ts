@@ -13,9 +13,7 @@ export class CurrentWeatherComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
 
   ngOnInit() {
-    this.weatherService
-      .getCurrentWeather('Munich', 'DE')
-      .subscribe((data) => (this.current = data))
+    this.weatherService.currentWeather.subscribe(data => (this.current = data))
   }
 
   getOrdinal(date: number) {
@@ -25,19 +23,3 @@ export class CurrentWeatherComponent implements OnInit {
       : ''
   }
 }
-
-/*
-//template: ` <p>current weather works!</p> `,
-// .getCurrentWeather('El Jadida', 'MA')
-
-  constructor() {
-    this.current = {
-      city: 'El Jadida',
-      country: 'Morocco',
-      date: new Date(),
-      image: 'assets/img/sunny.svg',
-      temperature: 26,
-      description: 'sunny',
-    } as ICurrentWeather
-  }
-*/
