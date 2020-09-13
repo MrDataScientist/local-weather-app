@@ -92,3 +92,12 @@ CLI v6.0.8 and above --source-map=false
 CLI v6.x --sourceMap=false
 
 CLI v1.x --sourcemaps=false
+
+# Git new branch
+
+git checkout -b new_branch
+
+# git change branch
+
+$ git branch iss53
+$ git checkout iss53
